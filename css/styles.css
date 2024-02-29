@@ -495,7 +495,7 @@ box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.1
     display: flex;
         justify-content: center;
         flex-direction: column;
-    
+        margin-right: 80px;
 }
 .footer-media-text {
     font-weight: 500;
@@ -503,7 +503,7 @@ box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.1
         line-height: 1.5;
         letter-spacing: 0.02em;
         text-align: left;
-        color: #fff;
+        color: #ffffff;
         margin-bottom: 16px;
 }
 .footer-media-list {
@@ -513,9 +513,6 @@ box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.1
 
     
 }
-
-
-
 
 .footer-media-link {
   display: flex;
@@ -532,9 +529,87 @@ box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.1
 .footer-media-link:focus{
     background-color: #31d0aa;
 }
+
 .footer-media-link-icon {
     fill: #f4f4fd;
 }    
 
+.footer-subscribe-block {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    
+}
 
+.footer-subscribe-text {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    text-align: left;
+    color: #ffffff;
+    margin-bottom: 16px;
+}
+
+.footer-subscribe-form {
+    display: flex;
+    gap: 24px;
+}
+
+.footer-subscribe-label {
+    display: flex;
+} 
+
+.footer-subscribe-input {
+    border: 1px solid #ffffff;
+    border-radius: 4px;
+    width: 264px;
+    height: 40px;
+    font-size: 12px;
+    line-height: 2;
+    letter-spacing: 0.04em;
+    color: #ffffff;
+    padding-left: 16px;
+    background-color: inherit;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+}
+.footer-subscribe-input::placeholder{
+    color: #ffffff;
+}
+
+.footer-subscribe-button {
+    display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+        gap: 16px;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.04em;
+        text-align: center;
+        color: #fff;
+        border-radius: 4px;
+        border: none;
+        padding: 8px 24px;
+        min-width: 165px;
+        height: 40px;
+        background-color: #4d5ae5;
+        cursor: pointer;
+
+
+}
+
+.subscribe-button-icon {
+    fill: #ffffff;
+}
+
+.footer-subscribe-button:hover,
+.footer-subscribe-button:focus {
+    background-color: #404BBF;
+}
 /* /Page Footer style */
+
+/* Modal Form style */
+
+/* /Modal Form style */
