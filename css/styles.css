@@ -582,7 +582,7 @@ box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.1
         align-items: center;
         justify-content: center;
         flex-direction: row;
-        gap: 16px;
+        
         font-weight: 500;
         font-size: 16px;
         line-height: 1.5;
@@ -600,6 +600,7 @@ box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.1
 
 .subscribe-button-icon {
     fill: #ffffff;
+    margin-left: 16px;
 }
 
 .footer-subscribe-button:hover,
@@ -748,15 +749,15 @@ transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
     border-radius: 4px;
     width: 100%;
     height: 120px;
-    padding-top: 8px;
-    padding-left: 16px;
+    padding: 8px 16px;
     background-color: transparent;
     outline: transparent;
     resize: none;
     font-size: 12px;
     line-height: 1.17;
     letter-spacing: 0.04em;
-    color: #2e2f42;
+    color: rgba(46, 47, 66, 0.4);
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .callback-form-textarea-input::placeholder {
@@ -768,7 +769,6 @@ transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 .callback-form-textarea-input:focus{
     border-color: #4d5ae5;
-    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .callback-form-checkbox-wrapper {
@@ -797,7 +797,7 @@ display: flex;
 }
 
 .callback-form-own-checkbox {
-    display: inline-block;
+    display: inline-flex;
     align-items: center;
     justify-content: center;
     width: 16px;
@@ -806,8 +806,7 @@ display: flex;
         border-radius: 2px;
         fill: transparent;
         cursor: pointer;
-        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);;
-
+        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .privacy-policy-link {
@@ -853,11 +852,13 @@ background-color: #404bbf;
         letter-spacing: 0.04em;
         text-align: center;
         color: #ffffff;
+        cursor: pointer;
+        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .callback-form-send-button:hover,
 .callback-form-send-button:focus {
     background-color: #404BBF;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
 }
 /* /Callback Form style */
